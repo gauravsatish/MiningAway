@@ -1,0 +1,11 @@
+name: MiningAway
+version: '${project.version}'
+main: com.chqppy.miningaway.MiningAway
+api-version: 1.17
+authors: [ chqppy ]
+description: A rip off version of prison servers which is defintely better than a prison server yes mhm for sure
+commands:
+  kits:
+    description: a
+  setblocksbroken:
+    description: admin command to set blocks broken
