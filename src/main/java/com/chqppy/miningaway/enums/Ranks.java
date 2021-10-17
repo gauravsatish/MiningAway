@@ -4,10 +4,10 @@ import org.bukkit.ChatColor;
 
 public enum Ranks {
 
-    NUB(ChatColor.GRAY + "Nub"),
-    EPICOGAMER(ChatColor.GOLD + "Epico Gamer"),
-    WOPIPIRO(ChatColor.BLUE + "Wopi Piro Gamer"),
-    WAH(ChatColor.LIGHT_PURPLE + "Wah");
+    PEASANT(ChatColor.GRAY + "Peasant"),
+    SENATOR(ChatColor.GOLD + "Senator"),
+    PADAWAN(ChatColor.BLUE + "Padawan"),
+    JEDI(ChatColor.LIGHT_PURPLE + "Jedi");
 
 
     private final String rankString;

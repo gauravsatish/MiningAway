@@ -9,3 +9,7 @@ commands:
     description: a
   setblocksbroken:
     description: admin command to set blocks broken
+    aliases:
+      - sbb
+  reset:
+    description: resets your blocks broken counter and removes kit items from your inventory

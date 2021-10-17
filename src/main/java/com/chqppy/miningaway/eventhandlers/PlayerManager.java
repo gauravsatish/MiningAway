@@ -2,6 +2,7 @@ package com.chqppy.miningaway.eventhandlers;
 
 import com.chqppy.miningaway.MiningAway;
 import com.chqppy.miningaway.enums.Ranks;
+import org.bukkit.ChatColor;
 import org.bukkit.NamespacedKey;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -28,18 +29,21 @@ public class PlayerManager implements Listener {
         if (playerData.has(new NamespacedKey(JavaPlugin.getPlugin(MiningAway.class), "playerRank"), PersistentDataType.STRING)) {
 
             if (playerData.get(new NamespacedKey(JavaPlugin.getPlugin(MiningAway.class), "playerRank"), PersistentDataType.STRING).equals("NUB")) {
-                main.playerRank.put(player, Ranks.NUB);
+                main.playerRank.put(player, Ranks.PEASANT);
             } else if (playerData.get(new NamespacedKey(JavaPlugin.getPlugin(MiningAway.class), "playerRank"), PersistentDataType.STRING).equals("EPICOGAMER")) {
-                main.playerRank.put(player, Ranks.EPICOGAMER);
+                main.playerRank.put(player, Ranks.SENATOR);
             } else if (playerData.get(new NamespacedKey(JavaPlugin.getPlugin(MiningAway.class), "playerRank"), PersistentDataType.STRING).equals("WOPIPIRO")) {
-                main.playerRank.put(player, Ranks.WOPIPIRO);
+                main.playerRank.put(player, Ranks.PADAWAN);
             } else if (playerData.get(new NamespacedKey(JavaPlugin.getPlugin(MiningAway.class), "playerRank"), PersistentDataType.STRING).equals("WAH")) {
-                main.playerRank.put(player, Ranks.WAH);
+                main.playerRank.put(player, Ranks.JEDI);
             } else {
                 System.out.println("Something went wrong in the setting player rank in the onJoin Event");
             }
         } else {
             playerData.set(new NamespacedKey(JavaPlugin.getPlugin(MiningAway.class), "playerRank"), PersistentDataType.STRING, "NUB");
+            main.playerRank.put(player, Ranks.PEASANT);
+            player.sendMessage(ChatColor.GREEN + "haha get ready to experience a ripoff of a prison server");
+            player.sendMessage(ChatColor.GREEN + "Do " + ChatColor.GOLD + "/kits" + ChatColor.GREEN + " to get started and stuff");
         }
 
         if (playerData.has(new NamespacedKey(JavaPlugin.getPlugin(MiningAway.class), "numBlocksBroken"), PersistentDataType.INTEGER)) {

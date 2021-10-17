@@ -29,19 +29,19 @@ public class KitsManager implements Listener {
 
             if (event.getCurrentItem() != null && event.getCurrentItem().getType().equals(Material.IRON_PICKAXE)) {
                 removeKitItems(player);
-                pInv.addItem(main.nubSword);
-                pInv.addItem(main.nubPick);
-                pInv.addItem(main.nubAxe);
-                pInv.addItem(main.nubShovel);
+                pInv.addItem(main.basicSword);
+                pInv.addItem(main.basicPick);
+                pInv.addItem(main.basicAxe);
+                pInv.addItem(main.basicShovel);
                 player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1.0F, 1.0F);
                 player.closeInventory();
             } else if (event.getCurrentItem() != null && event.getCurrentItem().getType().equals(Material.GOLDEN_PICKAXE)) {
                 if (main.blocksBrokenPlayer.get(player) >= 500) {
                     removeKitItems(player);
-                    pInv.addItem(main.epicoSword);
-                    pInv.addItem(main.epicoPick);
-                    pInv.addItem(main.epicoAxe);
-                    pInv.addItem(main.epicoShovel);
+                    pInv.addItem(main.senatorSword);
+                    pInv.addItem(main.senatorPick);
+                    pInv.addItem(main.senatorAxe);
+                    pInv.addItem(main.senatorShovel);
                     player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1.0F, 1.0F);
                     player.closeInventory();
                 } else {
@@ -53,10 +53,10 @@ public class KitsManager implements Listener {
             } else if (event.getCurrentItem() != null && event.getCurrentItem().getType().equals(Material.DIAMOND_PICKAXE)) {
                 if (main.blocksBrokenPlayer.get(player) >= 3500) {
                     removeKitItems(player);
-                    pInv.addItem(main.wopiSword);
-                    pInv.addItem(main.wopiPick);
-                    pInv.addItem(main.wopiAxe);
-                    pInv.addItem(main.wopiShovel);
+                    pInv.addItem(main.padawanSword);
+                    pInv.addItem(main.padawanPick);
+                    pInv.addItem(main.padawanAxe);
+                    pInv.addItem(main.padawanShovel);
                     player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1.0F, 1.0F);
                     player.closeInventory();
                 } else {
@@ -68,10 +68,10 @@ public class KitsManager implements Listener {
             } else if (event.getCurrentItem() != null && event.getCurrentItem().getType().equals(Material.NETHERITE_PICKAXE)) {
                 if (main.blocksBrokenPlayer.get(player) >= 10000) {
                     removeKitItems(player);
-                    pInv.addItem(main.wahSword);
-                    pInv.addItem(main.wahPick);
-                    pInv.addItem(main.wahAxe);
-                    pInv.addItem(main.wahShovel);
+                    pInv.addItem(main.jediSword);
+                    pInv.addItem(main.jediPick);
+                    pInv.addItem(main.jediAxe);
+                    pInv.addItem(main.jediShovel);
                     player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1.0F, 1.0F);
                     player.closeInventory();
                 } else {
@@ -88,53 +88,53 @@ public class KitsManager implements Listener {
 
     public void removeKitItems(Player player) {
         Inventory pInv = player.getInventory();
-        if (pInv.contains(main.nubSword)) {
-            pInv.remove(main.nubSword);
+        if (pInv.contains(main.basicSword)) {
+            pInv.remove(main.basicSword);
         }
-        if (pInv.contains(main.nubPick)) {
-            pInv.remove(main.nubPick);
+        if (pInv.contains(main.basicPick)) {
+            pInv.remove(main.basicPick);
         }
-        if (pInv.contains(main.nubAxe)) {
-            pInv.remove(main.nubAxe);
+        if (pInv.contains(main.basicAxe)) {
+            pInv.remove(main.basicAxe);
         }
-        if (pInv.contains(main.nubShovel)) {
-            pInv.remove(main.nubShovel);
+        if (pInv.contains(main.basicShovel)) {
+            pInv.remove(main.basicShovel);
         }
-        if (pInv.contains(main.epicoSword)) {
-            pInv.remove(main.epicoSword);
+        if (pInv.contains(main.senatorSword)) {
+            pInv.remove(main.senatorSword);
         }
-        if (pInv.contains(main.epicoPick)) {
-            pInv.remove(main.epicoPick);
+        if (pInv.contains(main.senatorPick)) {
+            pInv.remove(main.senatorPick);
         }
-        if (pInv.contains(main.epicoAxe)) {
-            pInv.remove(main.epicoAxe);
+        if (pInv.contains(main.senatorAxe)) {
+            pInv.remove(main.senatorAxe);
         }
-        if (pInv.contains(main.epicoShovel)) {
-            pInv.remove(main.epicoShovel);
+        if (pInv.contains(main.senatorShovel)) {
+            pInv.remove(main.senatorShovel);
         }
-        if (pInv.contains(main.wopiSword)) {
-            pInv.remove(main.wopiSword);
+        if (pInv.contains(main.padawanSword)) {
+            pInv.remove(main.padawanSword);
         }
-        if (pInv.contains(main.wopiPick)) {
-            pInv.remove(main.wopiPick);
+        if (pInv.contains(main.padawanPick)) {
+            pInv.remove(main.padawanPick);
         }
-        if (pInv.contains(main.wopiAxe)) {
-            pInv.remove(main.wopiAxe);
+        if (pInv.contains(main.padawanAxe)) {
+            pInv.remove(main.padawanAxe);
         }
-        if (pInv.contains(main.wopiShovel)) {
-            pInv.remove(main.wopiShovel);
+        if (pInv.contains(main.padawanShovel)) {
+            pInv.remove(main.padawanShovel);
         }
-        if (pInv.contains(main.wahSword)) {
-            pInv.remove(main.wahSword);
+        if (pInv.contains(main.jediSword)) {
+            pInv.remove(main.jediSword);
         }
-        if (pInv.contains(main.wahPick)) {
-            pInv.remove(main.wahPick);
+        if (pInv.contains(main.jediPick)) {
+            pInv.remove(main.jediPick);
         }
-        if (pInv.contains(main.wahAxe)) {
-            pInv.remove(main.wahAxe);
+        if (pInv.contains(main.jediAxe)) {
+            pInv.remove(main.jediAxe);
         }
-        if (pInv.contains(main.wahShovel)) {
-            pInv.remove(main.wahShovel);
+        if (pInv.contains(main.jediShovel)) {
+            pInv.remove(main.jediShovel);
         }
     }
 
