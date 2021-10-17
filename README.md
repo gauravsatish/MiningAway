@@ -12,11 +12,6 @@ For no real reason
 I just wanted to test my skills i have learnt so far in spigot
 <br>
 Hence i made this
-
-<h2>Whats with the naming scheme for the kits</h2>
-Its a bunch of random words created by my classmates lul
-<br>
-doesnt matter really
 <br>
 <br>
 <br>
